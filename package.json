@@ -1,0 +1,21 @@
+{
+  "name": "passkey-portfolio",
+  "version": "1.0.0",
+  "description": "1번 소개 페이지에 패스키로만 열리는 비공개 공간을 붙인 8번 과제",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "evidence": "node verify/evidence.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@simplewebauthn/server": "^14.0.3"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}

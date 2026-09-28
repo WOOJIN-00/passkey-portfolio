@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>송우진 | IT 인재 포트폴리오</title>
+
+  <meta
+    name="description"
+    content="채용을 원하는 기업에게 송우진의 경력사항, 자격증, 강점과 활동 근거를 보여주는 공개 포트폴리오입니다."
+  >
+
+  <style>
+    /* =========================
+       기본 설정
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        "Noto Sans KR",
+        "Apple SD Gothic Neo",
+        Arial,
+        sans-serif;
+
+      background: #f5f7fb;
+      color: #172033;
+      line-height: 1.6;
+
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+
+    /* =========================
+       헤더 / 첫 화면
+    ========================= */
+
+    .hero {
+      min-height: 100vh;
+      min-height: 100svh;
+
+      display: flex;
+      align-items: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          #111827 0%,
+          #1e3a8a 100%
+        );
+
+      color: #ffffff;
+      padding: 48px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+
+      grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(380px, 0.95fr);
+
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-label {
+      display: inline-block;
+
+      padding: 7px 14px;
+      margin-bottom: 18px;
+
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 999px;
+
+      color: #ffffff;
+      background: rgba(255,255,255,0.1);
+
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+
+      font-size: clamp(42px, 5vw, 68px);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-title {
+      margin: 0 0 18px;
+
+      font-size: clamp(24px, 3vw, 36px);
+      line-height: 1.3;
+      font-weight: 800;
+    }
+
+    .hero-description {
+      max-width: 650px;
+
+      margin: 0 0 24px;
+
+      color: #e5e7eb;
+
+      font-size: clamp(16px, 1.5vw, 20px);
+    }
+
+    .hero-purpose {
+      padding: 18px 20px;
+
+      border-left: 4px solid #60a5fa;
+      border-radius: 8px;
+
+      background: rgba(255,255,255,0.1);
+
+      color: #ffffff;
+
+      font-size: 15px;
+    }
+
+    .hero-purpose strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #93c5fd;
+    }
+
+
+    /* =========================
+       활동 근거
+    ========================= */
+
+    .evidence {
+      padding: 18px;
+
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 20px;
+
+      background: rgba(255,255,255,0.08);
+
+      box-shadow:
+        0 20px 50px rgba(0,0,0,0.25);
+    }
+
+    .evidence-title {
+      margin: 0 0 14px;
+
+      color: #ffffff;
+
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .evidence-image {
+      display: block;
+
+      width: 100%;
+      max-height: 370px;
+
+      object-fit: contain;
+
+      border-radius: 12px;
+
+      background: #ffffff;
+    }
+
+    .evidence-caption {
+      margin: 12px 4px 0;
+
+      color: #e5e7eb;
+
+      font-size: 13px;
+      text-align: center;
+    }
+
+
+    /* =========================
+       공통 섹션
+    ========================= */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      margin-bottom: 32px;
+    }
+
+    .section-header h2 {
+      margin: 0 0 10px;
+
+      color: #111827;
+
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.2;
+    }
+
+    .section-header p {
+      margin: 0;
+
+      color: #4b5563;
+      font-size: 16px;
+    }
+
+
+    /* =========================
+       강점
+    ========================= */
+
+    .strength-section {
+      background: #ffffff;
+    }
+
+    .strength-list {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+      gap: 20px;
+    }
+
+    .strength-card {
+      overflow: hidden;
+
+      border: 1px solid #dbe2ea;
+      border-radius: 16px;
+
+      background: #ffffff;
+
+      box-shadow:
+        0 8px 24px rgba(15,23,42,0.06);
+    }
+
+    .strength-button {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 22px;
+
+      border: 0;
+      background: #ffffff;
+
+      color: #172033;
+
+      text-align: left;
+      cursor: pointer;
+
+      font-weight: 800;
+      font-size: 17px;
+    }
+
+    .strength-button:hover {
+      background: #f8fafc;
+    }
+
+    .strength-button:focus-visible {
+      outline: 3px solid #2563eb;
+      outline-offset: -3px;
+    }
+
+    .arrow {
+      font-size: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .strength-button[aria-expanded="true"] .arrow {
+      transform: rotate(180deg);
+    }
+
+    .strength-content {
+      display: none;
+
+      padding: 0 22px 22px;
+
+      color: #374151;
+    }
+
+    .strength-content.open {
+      display: block;
+    }
+
+    .strength-content h3 {
+      margin: 18px 0 5px;
+
+      color: #1d4ed8;
+
+      font-size: 15px;
+    }
+
+    .strength-content p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .evidence-note {
+      margin-top: 24px;
+
+      padding: 18px;
+
+      border-radius: 12px;
+
+      background: #eff6ff;
+      color: #1e3a8a;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       경력 / 자격증
+    ========================= */
+
+    .profile-section {
+      background: #f5f7fb;
+    }
+
+    .profile-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 24px;
+    }
+
+    .info-card {
+      padding: 28px;
+
+      border: 1px solid #dbe2ea;
+      border-radius: 16px;
+
+      background: #ffffff;
+    }
+
+    .info-card h3 {
+      margin: 0 0 14px;
+
+      color: #1d4ed8;
+
+      font-size: 20px;
+    }
+
+    .info-card p {
+      margin: 0;
+
+      color: #374151;
+    }
+
+
+    /* =========================
+       공개 / 비공개
+    ========================= */
+
+    .privacy-section {
+      background: #ffffff;
+    }
+
+    .privacy-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 24px;
+    }
+
+    .privacy-card {
+      padding: 28px;
+
+      border-radius: 16px;
+    }
+
+    .privacy-card h3 {
+      margin: 0 0 18px;
+
+      font-size: 21px;
+    }
+
+    .privacy-card ul {
+      list-style: none;
+
+      margin: 0;
+      padding: 0;
+    }
+
+    .privacy-card li {
+      padding: 10px 0;
+
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .public-info {
+      border: 1px solid #bfdbfe;
+      background: #eff6ff;
+    }
+
+    .public-info h3 {
+      color: #1d4ed8;
+    }
+
+    .private-info {
+      border: 1px solid #fecaca;
+      background: #fef2f2;
+    }
+
+    .private-info h3 {
+      color: #b91c1c;
+    }
+
+
+    /* =========================
+       점검표
+    ========================= */
+
+    .check-section {
+      background: #f5f7fb;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 12px;
+
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+    }
+
+    .check-list li {
+      padding: 17px 20px;
+
+      border: 1px solid #dbe2ea;
+      border-radius: 12px;
+
+      background: #ffffff;
+
+      color: #1f2937;
+    }
+
+    .check {
+      display: inline-block;
+
+      width: 26px;
+      height: 26px;
+
+      margin-right: 8px;
+
+      border-radius: 50%;
+
+      background: #15803d;
+      color: #ffffff;
+
+      text-align: center;
+      line-height: 26px;
+
+      font-weight: 800;
+    }
+
+
+    /* =========================
+       푸터
+    ========================= */
+
+    footer {
+      padding: 30px 0;
+
+      background: #111827;
+      color: #d1d5db;
+
+      text-align: center;
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       반응형
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .hero {
+        min-height: auto;
+        padding: 60px 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .evidence-image {
+        max-height: 320px;
+      }
+
+      .strength-list {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+
+    @media (max-width: 650px) {
+
+      .container {
+        width: min(100% - 32px, 1120px);
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .profile-grid,
+      .privacy-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 40px 0;
+      }
+
+      .hero h1 {
+        font-size: 44px;
+      }
+
+    }
+
+
+    /* =========================
+       움직임 줄이기
+    ========================= */
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+
+    }
+
+  </style>
+  <link rel="stylesheet" href="private.css">
+</head>
+
+
+<body>
+
+  <!-- =================================
+       첫 화면
+  ================================== -->
+
+  <header class="hero">
+
+    <div class="container">
+
+      <div class="hero-grid">
+
+        <!-- 소개 -->
+
+        <div>
+
+          <span class="hero-label">
+            PORTFOLIO
+          </span>
+
+          <h1>
+            송우진
+          </h1>
+
+          <p class="hero-title">
+            성장하며 실무 역량을 쌓고 있는 IT 인재
+          </p>
+
+          <p class="hero-description">
+            현재 SKT-뉴딜 ALEPH 과정을 이수하며
+            IT 분야의 실무 역량과 문제 해결 능력을
+            배우고 있습니다.
+          </p>
+
+
+          <div class="hero-purpose">
+
+            <strong>
+              이 페이지의 목적
+            </strong>
+
+            이 페이지는 해당 인재 채용을 원하는 기업에게
+            나의 이력을 보여주기 위한 것이다.
+
+          </div>
+
+        </div>
+
+
+        <!-- 활동 근거 -->
+
+        <div class="evidence">
+
+          <h2 class="evidence-title">
+            활동 근거
+          </h2>
+
+          <img
+            src="ALEPH.jpg"
+            alt="K-뉴딜 SKT ALEPH 과정 수강 및 출석률을 보여주는 활동 근거"
+            class="evidence-image"
+          >
+
+          <p class="evidence-caption">
+            SKT-뉴딜 ALEPH 과정 수강 및 활동 근거
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =================================
+       강점
+  ================================== -->
+
+  <main>
+
+    <section class="strength-section">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <h2>
+            나의 강점
+          </h2>
+
+          <p>
+            실제 경험을 상황·행동·결과로 정리했습니다.
+            각 항목을 눌러 자세한 내용을 확인할 수 있습니다.
+          </p>
+
+        </div>
+
+
+        <div class="strength-list">
+
+
+          <!-- 강점 1 -->
+
+          <article class="strength-card">
+
+            <button
+              type="button"
+              class="strength-button"
+              aria-expanded="false"
+              aria-controls="strength-1"
+              id="button-1"
+            >
+
+              꾸준함과 자기관리
+
+              <span
+                class="arrow"
+                aria-hidden="true"
+              >
+                ▼
+              </span>
+
+            </button>
+
+
+            <div
+              class="strength-content"
+              id="strength-1"
+              role="region"
+              aria-labelledby="button-1"
+            >
+
+              <h3>
+                상황
+              </h3>
+
+              <p>
+                군 전역 후 헬스장에서 몸무게를
+                증량하고자 했습니다.
+              </p>
+
+              <h3>
+                행동
+              </h3>
+
+              <p>
+                주 5일씩 꾸준히 헬스장에 방문하며
+                운동을 지속했습니다.
+              </p>
+
+              <h3>
+                결과
+              </h3>
+
+              <p>
+                54kg에서 58kg까지 증량하는
+                목표를 달성했습니다.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- 강점 2 -->
+
+          <article class="strength-card">
+
+            <button
+              type="button"
+              class="strength-button"
+              aria-expanded="false"
+              aria-controls="strength-2"
+              id="button-2"
+            >
+
+              집중력과 끈기
+
+              <span
+                class="arrow"
+                aria-hidden="true"
+              >
+                ▼
+              </span>
+
+            </button>
+
+
+            <div
+              class="strength-content"
+              id="strength-2"
+              role="region"
+              aria-labelledby="button-2"
+            >
+
+              <h3>
+                상황
+              </h3>
+
+              <p>
+                군 복무 중 수능을 준비해야 하는
+                상황이었습니다.
+              </p>
+
+              <h3>
+                행동
+              </h3>
+
+              <p>
+                개인정비시간을 활용하여
+                수능 공부에 집중했습니다.
+              </p>
+
+              <h3>
+                결과
+              </h3>
+
+              <p>
+                제한된 시간 속에서도 꾸준히 공부하며
+                집중력과 끈기를 기르는 습관을 만들었습니다.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- 강점 3 -->
+
+          <article class="strength-card">
+
+            <button
+              type="button"
+              class="strength-button"
+              aria-expanded="false"
+              aria-controls="strength-3"
+              id="button-3"
+            >
+
+              시간관리와 계획 실행
+
+              <span
+                class="arrow"
+                aria-hidden="true"
+              >
+                ▼
+              </span>
+
+            </button>
+
+
+            <div
+              class="strength-content"
+              id="strength-3"
+              role="region"
+              aria-labelledby="button-3"
+            >
+
+              <h3>
+                상황
+              </h3>
+
+              <p>
+                집에서 보내는 시간이 많아
+                시간을 효율적으로 활용할 방법이 필요했습니다.
+              </p>
+
+              <h3>
+                행동
+              </h3>
+
+              <p>
+                AI를 활용하여 하루 계획표를 만들고
+                해야 할 일을 시간별로 정리했습니다.
+              </p>
+
+              <h3>
+                결과
+              </h3>
+
+              <p>
+                계획표에 따라 하루를 보내면서
+                불필요하게 낭비하는 시간을 줄였습니다.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div class="evidence-note">
+
+          <strong>
+            근거 연결:
+          </strong>
+
+          위 활동은 개인적인 민감정보를 공개하지 않고
+          경험과 결과 중심으로 정리했습니다.
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         경력 / 자격증
+    ================================== -->
+
+    <section class="profile-section">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <h2>
+            공개 이력
+          </h2>
+
+          <p>
+            채용 검토에 필요한 공개 가능한 정보만 정리했습니다.
+          </p>
+
+        </div>
+
+
+        <div class="profile-grid">
+
+          <article class="info-card">
+
+            <h3>
+              경력사항
+            </h3>
+
+            <p>
+              뷰티 분야 실무 경험을 바탕으로
+              고객 응대와 세밀한 작업 경험을 쌓았습니다.
+            </p>
+
+            <p style="margin-top: 12px;">
+              이후 디자인·편집과 웹페이지 제작을 학습하며
+              IT 분야로 역량을 확장하고 있습니다.
+            </p>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <h3>
+              자격증
+            </h3>
+
+            <p>
+              피부미용자격증을 보유하고 있습니다.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         공개 / 비공개
+    ================================== -->
+
+    <section class="privacy-section">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <h2>
+            공개 범위
+          </h2>
+
+          <p>
+            채용 목적에 필요한 정보와 공개하지 않을 정보를
+            구분했습니다.
+          </p>
+
+        </div>
+
+
+        <div class="privacy-grid">
+
+
+          <article class="privacy-card public-info">
+
+            <h3>
+              공개할 정보
+            </h3>
+
+            <ul>
+
+              <li>
+                ✓ 경력사항
+              </li>
+
+              <li>
+                ✓ 자격증
+              </li>
+
+              <li>
+                ✓ 강점
+              </li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="privacy-card private-info">
+
+            <h3>
+              공개하지 않을 정보
+            </h3>
+
+            <ul>
+
+              <li>
+                ✓ 얼굴
+              </li>
+
+              <li>
+                ✓ 졸업학교
+              </li>
+
+              <li>
+                ✓ 주소
+              </li>
+
+            </ul>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================
+         공개 범위 점검표
+    ================================== -->
+
+    <section class="check-section">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <h2>
+            공개 범위 점검표
+          </h2>
+
+          <p>
+            공개 전 확인해야 할 기준을 정리했습니다.
+          </p>
+
+        </div>
+
+
+        <ul class="check-list">
+
+          <li>
+            <span class="check">✓</span>
+            로그인·회원가입 없이 공개 페이지 확인 가능
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            페이지의 대상과 목적이 한 문장으로 작성됨
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            공개 정보가 3개 이상 작성됨
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            비공개 정보가 3개 이상 작성됨
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            키보드 Tab 및 Enter·Space로 주요 기능 사용 가능
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            화면의 가로 넘침이 발생하지 않도록 구성
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            움직임 줄이기 설정을 사용하는 사용자도 이용 가능
+          </li>
+
+          <li>
+            <span class="check">✓</span>
+            비밀번호·토큰·API 키를 포함하지 않음
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+    <!-- =================================
+         8번 과제: 공개 / 비공개 경계
+         이 아래 영역의 "내용"은 이 HTML 안에 없다.
+         패스키로 로그인한 뒤 서버(/api/private)가 내려 준다.
+    ================================== -->
+
+    <div class="zone-boundary" role="separator" aria-label="공개 영역과 비공개 영역의 경계">
+      <div class="container zone-boundary-inner">
+        <span class="zone-tag zone-public">▲ 여기까지 공개 영역 · 누구나 볼 수 있음</span>
+        <span class="zone-tag zone-private">▼ 여기부터 비공개 영역 · 패스키로만 열림</span>
+      </div>
+    </div>
+
+
+    <section class="private-zone" id="private-zone" aria-labelledby="private-zone-title">
+
+      <div class="container">
+
+        <div class="private-head">
+          <div>
+            <span class="private-label">PRIVATE · PASSKEY ONLY</span>
+            <h2 id="private-zone-title">🔒 나만의 공간</h2>
+            <p>
+              프로젝트 메모, 지원하려는 곳, 회고를 모아 두는 비공개 공간입니다.
+              비밀번호는 없습니다. 내 기기에 있는 패스키로만 열립니다.
+            </p>
+          </div>
+          <span class="lock-state" id="lock-state">잠김</span>
+        </div>
+
+        <p class="reviewer-note">
+          심사하시는 분은 이 영역을 열 필요가 없습니다.
+          위쪽 공개 소개까지만 보시면 됩니다.
+        </p>
+
+        <div class="message" id="message" role="status" aria-live="polite" hidden></div>
+
+        <!-- 이 기기에 패스키를 저장할 수 없을 때만 보인다 -->
+        <div class="message setup-notice" id="platform-notice" hidden>
+          <strong>이 기기에는 아직 패스키를 저장할 수 없습니다.</strong>
+          그래서 Windows가 USB 보안 키만 물어볼 수 있습니다. 아래 중 하나를 해 주세요.
+          <ol>
+            <li>
+              <b>Windows Hello PIN 만들기 (가장 쉬움)</b>:
+              설정 → 계정 → 로그인 옵션 → PIN(Windows Hello) → 설정.
+              PIN을 만든 뒤 이 페이지를 새로고침하고 "이 기기"를 고르세요.
+            </li>
+            <li>
+              <b>Chrome 비밀번호 관리자에 저장</b>:
+              Chrome에 Google 계정으로 로그인하고 동기화를 켠 뒤 "이 기기"를 고르세요.
+            </li>
+            <li>
+              <b>휴대폰에 저장</b>: 이 PC에 블루투스가 켜져 있어야 QR 코드 방식이 동작합니다.
+            </li>
+          </ol>
+        </div>
+
+
+        <!-- 잠긴 상태 -->
+
+        <div id="locked-view" class="locked-grid">
+
+          <article class="panel">
+            <h3>패스키로 들어가기</h3>
+            <p>
+              서버가 보낸 일회용 질문에 내 기기가 서명해 답합니다.
+              계정 이름을 적을 필요도 없습니다.
+            </p>
+            <button type="button" class="btn btn-primary" id="login-button">
+              패스키로 들어가기
+            </button>
+          </article>
+
+          <article class="panel">
+            <h3>처음이라면: 패스키 만들기</h3>
+            <form id="register-form" class="stack">
+              <label>
+                계정 이름 <small>(영문·숫자 3~20자)</small>
+                <input type="text" id="register-username" name="username"
+                       autocomplete="username" required
+                       pattern="[a-zA-Z0-9_\-]{3,20}" maxlength="20">
+              </label>
+              <label>
+                이 패스키의 이름 <small>(예: 내 노트북 Windows Hello)</small>
+                <input type="text" id="register-passkey-name" name="passkeyName"
+                       maxlength="40" required>
+              </label>
+              <label>
+                어디에 저장할까요
+                <select id="register-authenticator" class="authenticator-select">
+                  <option value="">브라우저가 고르게 두기</option>
+                  <option value="localDevice">이 기기 (Windows Hello · Chrome 비밀번호 관리자)</option>
+                  <option value="remoteDevice">휴대폰 (QR 코드로 연결)</option>
+                  <option value="securityKey">USB 보안 키</option>
+                </select>
+              </label>
+              <button type="submit" class="btn">패스키 만들기</button>
+            </form>
+          </article>
+
+        </div>
+
+
+        <!-- 열린 상태: 내용은 로그인 뒤 서버에서 받아 채운다 -->
+
+        <div id="unlocked-view" hidden>
+
+          <div class="toolbar">
+            <p><strong id="who"></strong> 계정으로 들어와 있습니다.</p>
+            <button type="button" class="btn btn-ghost" id="logout-button">로그아웃</button>
+          </div>
+
+          <h3 class="sub-title">비공개 항목 <span id="item-count"></span></h3>
+          <div class="item-columns" id="item-columns"></div>
+
+          <form id="item-form" class="panel item-form">
+            <h4>항목 추가</h4>
+            <p class="hint">실제 연락처·주민번호 같은 진짜 개인정보는 적지 마세요. 만들어 넣은 내용이면 충분합니다.</p>
+            <div class="item-form-row">
+              <label>
+                분류
+                <select id="item-category">
+                  <option value="project">준비 중인 프로젝트 메모</option>
+                  <option value="apply">지원하려는 곳</option>
+                  <option value="retro">나의 회고</option>
+                </select>
+              </label>
+              <label class="grow">
+                제목
+                <input type="text" id="item-title" maxlength="100" required>
+              </label>
+            </div>
+            <label>
+              내용
+              <textarea id="item-body" rows="3" maxlength="2000"></textarea>
+            </label>
+            <button type="submit" class="btn">추가</button>
+          </form>
+
+          <h3 class="sub-title">내 패스키 <span id="passkey-count"></span></h3>
+          <p class="hint">
+            기기를 잃어버릴 때를 대비해 패스키를 두 개 이상 등록해 두세요.
+            마지막 남은 패스키는 지울 수 없습니다. 지우면 이 계정으로 다시 들어올 방법이 없기 때문입니다.
+          </p>
+          <ul class="passkey-list" id="passkey-list"></ul>
+
+          <form id="add-passkey-form" class="panel item-form">
+            <h4>패스키 하나 더 등록</h4>
+            <p class="hint">
+              같은 기기에는 같은 계정의 패스키가 두 번 만들어지지 않습니다.
+              휴대폰(QR 코드), 다른 브라우저, 보안 키 중 하나로 등록하세요.
+            </p>
+            <div class="item-form-row">
+              <label class="grow">
+                새 패스키의 이름
+                <input type="text" id="add-passkey-name" maxlength="40" required>
+              </label>
+              <label>
+                어디에 저장할까요
+                <select id="add-passkey-authenticator" class="authenticator-select">
+                  <option value="">브라우저가 고르게 두기</option>
+                  <option value="localDevice">이 기기 (Windows Hello · Chrome 비밀번호 관리자)</option>
+                  <option value="remoteDevice">휴대폰 (QR 코드로 연결)</option>
+                  <option value="securityKey">USB 보안 키</option>
+                </select>
+              </label>
+              <button type="submit" class="btn">패스키 추가</button>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =================================
+       푸터
+  ================================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <p>
+        © 2026 송우진 Portfolio
+      </p>
+
+      <p>
+        채용 검토를 위한 공개 포트폴리오
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- 강점 펼치기 / 접기 (1번 과제의 스크립트를 파일로 옮김) -->
+  <script src="strengths.js"></script>
+
+  <!-- 패스키 로그인 / 비공개 공간 -->
+  <script src="private.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+# Render 배포 설정 (Blueprint)
+# 배포 후 RP_ID / ORIGIN 을 실제 주소로 바꿔야 패스키가 동작한다.
+services:
+  - type: web
+    name: passkey-portfolio
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 24
+      - key: RP_ID
+        value: passkey-portfolio.onrender.com
+      - key: ORIGIN
+        value: https://passkey-portfolio.onrender.com
+      # 새 계정을 만들 수 있는 이름을 제한하려면 값을 넣는다 (예: woojin,woojin-sub)
+      - key: ALLOWED_USERNAMES
+        sync: false
